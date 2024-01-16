@@ -9,4 +9,4 @@ def pow(a, b):
         result = 1.0
         for _ in range(abs(b)):
             result /= a
-        return result
+        return float("{:.17e}".format(result))
