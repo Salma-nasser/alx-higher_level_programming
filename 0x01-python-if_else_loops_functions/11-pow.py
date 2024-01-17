@@ -9,4 +9,7 @@ def pow(a, b):
         result = 1.0
         for _ in range(abs(b)):
             result /= a
-        return "{:.15e}".format(result)
+        if -0.001 < result < 0.001:
+            return "{:.15e}".format(result)
+        else:
+            return "{:.2f}".format(result)
