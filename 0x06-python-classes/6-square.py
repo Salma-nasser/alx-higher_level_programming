@@ -4,14 +4,10 @@
 
 class Square:
     """ A class that defines a square with specific size"""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize the Square class with a size that has a positive value"""
         self.__size = size
         self.__position = position
-
-    def area(self):
-        """ Compute the area of the square object"""
-        return (self.__size ** 2)
 
     @property
     def size(self):
@@ -42,6 +38,10 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
 
         self.__position = value
+
+    def area(self):
+        """ Compute the area of the square object"""
+        return (self.__size ** 2)
 
     def my_print(self):
         """Print the square using the '#' character"""
