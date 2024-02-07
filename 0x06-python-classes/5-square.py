@@ -12,6 +12,14 @@ class Square:
         """ Compute the area of the square object"""
         return (self.__size ** 2)
 
+    def my_print(self):
+        """ that prints in stdout the square with the character # """
+        if self.__size == 0:
+            print()
+            return
+        for i in range(0, self.__size):
+            print("#" * self.__size)
+
     @property
     def size(self):
         """ Return the size attribute"""
