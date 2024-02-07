@@ -4,9 +4,10 @@
 
 class Square:
     """ A class that defines a square with specific size"""
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0,0)):
         """Initialize the Square class with a size that has a positive value"""
         self.__size = size
+        self.__position = position
 
     def area(self):
         """ Compute the area of the square object"""
