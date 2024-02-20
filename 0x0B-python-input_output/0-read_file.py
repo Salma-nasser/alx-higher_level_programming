@@ -1,13 +1,10 @@
 #!/usr/bin/python3
 """
-readinga file
+reading a file
 """
 
 
 def read_file(filename=""):
-    """
-    reading operation
-    """
-    with open(filename, "r", encoding="utf-8") as f:
-        print(f.read, end="")
-
+    """  the function defination """
+    with open(filename, mode='r', encoding='utf-8') as a_file:
+        print(a_file.read(), end='')
